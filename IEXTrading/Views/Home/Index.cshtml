@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Hospital General Information";
+}
+
+
+    <head>
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link rel="stylesheet" type="text/css" href="~/css/table.css" />
+
+     <style>
+         .bg-img {
+    /* The image used */
+    background-image: url(../images/hospital.jpg);
+    min-height: 620px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+     </style>
+    </head>
+        <header>
+
+
+            <div class='headerdiv'>
+                <h2>
+                    <img src="~/images/snake.png" alt="Medical Logo" style="width:75px"> Medicare Hospitals in Florida
+                </h2>
+        </header>
+         
+        <body>
+            <div>
+                <div class="topnav" id="myTopnav">
+                    <a class="active" asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Form">HOSPITAL SEARCH</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Hospitals">HOSPITALS</a>
+                    <a asp-area="" asp-controller="Home" asp-action="About_us">ABOUT US</a>
+                </div>
+
+                <div class="bg-img">
+                </div>
+
+
+
+
+
+                <div style="padding-left:20px; padding-right:20px">
+                </div>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+</body>
